@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: rgb(255, 255, 255);
+}
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#slide {
+
+    position: relative;
+    /* text-align: center; */
+    animation: slide_left 10s ease-out infinite;
+    animation-iteration-count: infinite;
+    -moz-animation: slide_left  10s ease-out infinite;
+    -webkit-animation: slide_left 10s ease-out infinite;
+    /* -webkit-animation: slide_right 10s ease-in-out infinite; */
+    -o-animation: slide_left 10s ease-out infinite;
+}
+@-webkit-keyframes slide_left{
+    0%{
+        color: rgb(244, 12, 12);
+        left: 100px;
+        top: 700px;
+    }
+    50%{
+        empty-cells: show;
+    }
+    100%{
+        color: rgb(17, 126, 235);
+        left: 1000px;
+        top: 700px;
+    }
+}
